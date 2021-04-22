@@ -1,6 +1,10 @@
 from django.contrib import admin
 from .models import Category, Site, Password
 
+from django_otp.admin import OTPAdminSite
+
+admin.site.__class__ = OTPAdminSite
+
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
