@@ -160,4 +160,7 @@ Thumbs.db
 
 # Environment Settings
 .env
+
+# Data Directory
+data/
 # End of https://www.toptal.com/developers/gitignore/api/django
