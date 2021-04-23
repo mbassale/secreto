@@ -1,0 +1,7 @@
+version: "3.9"
+
+services:
+  web:
+    command: "sh -c /code/init.dev.sh"
+    ports:
+      - "8000:8000"

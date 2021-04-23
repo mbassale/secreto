@@ -10,13 +10,11 @@ services:
       - MYSQL_DATABASE=${DB_NAME}
       - MYSQL_USER=${DB_USER}
       - MYSQL_PASSWORD=${DB_PASSWORD}
+
   web:
     build: .
-    command: sh -c /code/init.sh
     volumes:
       - .:/code
-    ports:
-      - "8000:8000"
     environment:
       - DB_HOST
       - DB_NAME
